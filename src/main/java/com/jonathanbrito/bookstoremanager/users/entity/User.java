@@ -1,6 +1,7 @@
 package com.jonathanbrito.bookstoremanager.users.entity;
 
 import com.jonathanbrito.bookstoremanager.books.entity.Book;
+import com.jonathanbrito.bookstoremanager.entity.Auditable;
 import com.jonathanbrito.bookstoremanager.users.enums.Gender;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -12,7 +13,7 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-public class User {
+public class User extends Auditable {
 
     @EqualsAndHashCode.Include
     @Id

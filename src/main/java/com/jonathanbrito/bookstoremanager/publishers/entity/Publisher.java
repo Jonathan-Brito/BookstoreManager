@@ -1,6 +1,7 @@
 package com.jonathanbrito.bookstoremanager.publishers.entity;
 
 import com.jonathanbrito.bookstoremanager.books.entity.Book;
+import com.jonathanbrito.bookstoremanager.entity.Auditable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -11,7 +12,7 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-public class Publisher {
+public class Publisher extends Auditable {
 
     @Id
     @EqualsAndHashCode.Include
